@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f908ac36-aea6-4046-89fb-2555585c26c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/PokerCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PokerCompare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PokerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PokerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,6 +22,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -48,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PokerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+            <state relative-caret-position="360">
+              <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,8 +94,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Poker.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PokerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/PokerCompare.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PokerTest.java" />
       </list>
     </option>
   </component>
@@ -229,6 +238,26 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="PokerTest.should_return_palyer2_win_when_give_two_double_tow__pair_list_and_list1_is_high_than_list" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;PokerTest.should_return_palyer2_win_when_give_two_double_tow__pair_list_and_list1_is_high_than_list&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="PokerTest.should_return_player2_win_when_both_have_a_pair_but_p2_pair_max_than_p1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -249,33 +278,13 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PokerTest.should_return_player2_win_when_give_two_high_list" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;PokerTest.should_return_player2_win_when_give_two_high_list&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.PokerTest" />
+        <item itemvalue="Gradle.PokerTest.should_return_palyer2_win_when_give_two_double_tow__pair_list_and_list1_is_high_than_list" />
         <item itemvalue="Gradle.PokerTest.should_return_A_draw_when_give_same_high_list" />
         <item itemvalue="Gradle.PokerTest.should_return_player2_win_when_both_have_a_pair_but_p2_pair_max_than_p1" />
         <item itemvalue="Gradle.PokerTest.should_return_list_win_when_give_a_pair_list_and_a_high_card" />
-        <item itemvalue="Gradle.PokerTest.should_return_player2_win_when_give_two_high_list" />
       </list>
     </recent_temporary>
   </component>
@@ -291,17 +300,11 @@
       <updated>1566102963482</updated>
       <workItem from="1566102971357" duration="264000" />
       <workItem from="1566103474193" duration="317000" />
-      <workItem from="1566103948148" duration="7268000" />
+      <workItem from="1566103948148" duration="7543000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PokerTest_should_return_A_draw_when_give_same_high_list - 2019.08.18 at 13h 55m 49s.xml">
-      <configuration name="PokerTest.should_return_A_draw_when_give_same_high_list" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="PokerTest - 2019.08.18 at 14h 00m 52s.xml">
-      <configuration name="PokerTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="PokerTest_should_return_list_win_when_give_a_pair_list_and_a_high_card - 2019.08.18 at 14h 28m 20s.xml">
       <configuration name="PokerTest.should_return_list_win_when_give_a_pair_list_and_a_high_card" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -326,9 +329,15 @@
     <history-entry file="PokerTest - 2019.08.18 at 15h 09m 39s.xml">
       <configuration name="PokerTest" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="PokerTest_should_return_palyer2_win_when_give_two_double_tow__pair_list_and_list1_is_high_than_list - 2019.08.18 at 15h 14m 07s.xml">
+      <configuration name="PokerTest.should_return_palyer2_win_when_give_two_double_tow__pair_list_and_list1_is_high_than_list" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="PokerTest - 2019.08.18 at 15h 14m 20s.xml">
+      <configuration name="PokerTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7849000" />
+    <option name="totallyTimeSpent" value="8124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="-8" width="1307" height="784" extended-state="6" />
@@ -406,8 +415,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PokerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        <state relative-caret-position="360">
+          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -65,4 +65,16 @@ public class PokerTest {
         //then
         Assert.assertEquals("Player1 win", result);
     }
+
+    @Test
+    public void should_return_palyer2_win_when_give_two_double_tow__pair_list_and_list1_is_high_than_list() {
+        //given
+        List player1 = Arrays.asList(new Poker("5s"), new Poker("5d"), new Poker("6s"), new Poker("6d"), new Poker("9s"));
+        List player2 = Arrays.asList(new Poker("4s"), new Poker("4d"), new Poker("8s"), new Poker("8d"), new Poker("3s"));
+        PokerCompare pokerCompare = new PokerCompare();
+        //when
+        String result = pokerCompare.compareCard(player1, player2);
+        //then
+        Assert.assertEquals("Player2 win", result);
+    }
 }

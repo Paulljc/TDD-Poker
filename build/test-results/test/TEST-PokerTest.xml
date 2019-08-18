@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PokerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-08-18T07:09:38" hostname="USER-20150312HD" time="0.043">
+<testsuite name="PokerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-08-18T07:14:19" hostname="USER-20150312HD" time="0.043">
   <properties/>
-  <testcase name="should_return_A_draw_when_give_same_high_list" classname="PokerTest" time="0.026"/>
-  <testcase name="should_return_player1_win_when_give_a_pair_and_a_high_card" classname="PokerTest" time="0.0"/>
-  <testcase name="should_return_player1_win_when_compare_two_pair_with_a_pair" classname="PokerTest" time="0.001"/>
-  <testcase name="should_return_player2_win_when_both_have_a_pair_but_p2_pair_max_than_p1" classname="PokerTest" time="0.009"/>
-  <testcase name="should_return_player2_win_when_give_two_high_list" classname="PokerTest" time="0.001"/>
+  <testcase name="should_return_A_draw_when_give_same_high_list" classname="PokerTest" time="0.031"/>
+  <testcase name="should_return_player1_win_when_give_a_pair_and_a_high_card" classname="PokerTest" time="0.002"/>
+  <testcase name="should_return_player1_win_when_compare_two_pair_with_a_pair" classname="PokerTest" time="0.0"/>
+  <testcase name="should_return_player2_win_when_both_have_a_pair_but_p2_pair_max_than_p1" classname="PokerTest" time="0.003"/>
+  <testcase name="should_return_palyer2_win_when_give_two_double_tow__pair_list_and_list1_is_high_than_list" classname="PokerTest" time="0.001"/>
+  <testcase name="should_return_player2_win_when_give_two_high_list" classname="PokerTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
