@@ -29,4 +29,16 @@ public class PokerTest {
         //then
         Assert.assertEquals("A draw", result);
     }
+
+    @Test
+    public void should_return_player1_win_when_give_a_pair_and_a_high_card() {
+        //given
+        List player1 = Arrays.asList(new Poker("3s"), new Poker("3d"), new Poker("5s"), new Poker("6d"), new Poker("7s"));
+        List player2 = Arrays.asList(new Poker("4s"), new Poker("9d"), new Poker("6s"), new Poker("5d"), new Poker("3s"));
+        PokerCompare pokerCompare = new PokerCompare();
+        //when
+        String result = pokerCompare.compareCard(player1, player2);
+        //then
+        Assert.assertEquals("Player1 win", result);
+    }
 }

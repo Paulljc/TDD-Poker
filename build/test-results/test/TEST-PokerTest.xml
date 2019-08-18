@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PokerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-08-18T06:00:52" hostname="USER-20150312HD" time="0.026">
+<testsuite name="PokerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-08-18T06:28:41" hostname="USER-20150312HD" time="0.04">
   <properties/>
-  <testcase name="should_return_A_draw_when_give_same_high_list" classname="PokerTest" time="0.023"/>
-  <testcase name="should_return_player2_win_when_give_two_high_list" classname="PokerTest" time="0.002"/>
+  <testcase name="should_return_A_draw_when_give_same_high_list" classname="PokerTest" time="0.034"/>
+  <testcase name="should_return_player2_win_when_give_two_high_list" classname="PokerTest" time="0.001"/>
+  <testcase name="should_return_list_win_when_give_a_pair_list_and_a_high_card" classname="PokerTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
