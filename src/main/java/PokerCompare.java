@@ -20,6 +20,25 @@ public class PokerCompare {
         Set<Character> player1Color = calcColor(player1);
         Set<Character> player2Color = calcColor(player2);
 
+        boolean player1IsStraight = calcStraight(player1Number, player1PairAmount);
+        boolean player2IsStraight = calcStraight(player2Number, player2PairAmount);
+
+        if ((player1IsStraight && player1Color.size() == 1) || (player2IsStraight && player2Color.size() == 1)){
+            if ((player1IsStraight && player1Color.size() == 1) && !(player2IsStraight && player2Color.size() == 1)){
+                return PLAYER1_WIN;
+            } else if (!(player1IsStraight && player1Color.size() == 1) && (player2IsStraight && player2Color.size() == 1)){
+                return PLAYER2_WIN;
+            } else {
+                if (compareColor(player1Color, player2Color) == "p1") {
+                    return PLAYER1_WIN;
+                } else if (compareColor(player1Color, player2Color) == "p2") {
+                    return PLAYER2_WIN;
+                } else {
+
+                }
+            }
+        }
+
         boolean player1IsFourWithOne = calcFourWithOne(player1PairAmount);
         boolean player2IsFourWithOne = calcFourWithOne(player2PairAmount);
         if (player1IsFourWithOne || player2IsFourWithOne) {
@@ -62,8 +81,6 @@ public class PokerCompare {
             }
         }
 
-        boolean player1IsStraight = calcStraight(player1Number, player1PairAmount);
-        boolean player2IsStraight = calcStraight(player2Number, player2PairAmount);
         if (player1IsStraight || player2IsStraight) {
             if (player1IsStraight && !player2IsStraight) {
                 return PLAYER1_WIN;
