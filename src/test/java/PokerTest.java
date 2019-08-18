@@ -10,7 +10,7 @@ public class PokerTest {
     public void should_return_player2_win_when_give_two_high_list() {
         //given
         List player1 = Arrays.asList(new Poker("4s"), new Poker("3d"), new Poker("5s"), new Poker("6d"), new Poker("8s"));
-        List player2 = Arrays.asList(new Poker("4s"), new Poker("9d"), new Poker("8s"), new Poker("5d"), new Poker("3s"));
+        List player2 = Arrays.asList(new Poker("4s"), new Poker("7d"), new Poker("As"), new Poker("5d"), new Poker("3s"));
         PokerCompare pokerCompare = new PokerCompare();
         //when
         String result = pokerCompare.compareCard(player1, player2);
@@ -268,7 +268,7 @@ public class PokerTest {
     public void should_return_player2_win_when_give_two_straight_color_and_different_number() {
         //given
         List player1 = Arrays.asList(new Poker("4c"), new Poker("5c"), new Poker("6c"), new Poker("7c"), new Poker("8c"));
-        List player2 = Arrays.asList(new Poker("5c"), new Poker("6c"), new Poker("7c"), new Poker("8c"), new Poker("9c"));
+        List player2 = Arrays.asList(new Poker("9c"), new Poker("Tc"), new Poker("Jc"), new Poker("Qc"), new Poker("Kc"));
         PokerCompare pokerCompare = new PokerCompare();
         //when
         String result = pokerCompare.compareCard(player1, player2);
