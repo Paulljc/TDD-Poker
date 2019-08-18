@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f908ac36-aea6-4046-89fb-2555585c26c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/PokerCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PokerCompare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PokerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PokerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Poker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="22" column="24" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="24" />
+            <state relative-caret-position="75">
+              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding>
                 <element signature="e#337#338#0" expanded="true" />
                 <element signature="e#366#367#0" expanded="true" />
@@ -57,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PokerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+            <state relative-caret-position="210">
+              <caret line="81" column="101" lean-forward="true" selection-start-line="81" selection-start-column="101" selection-end-line="81" selection-end-column="101" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/PokerCompare.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+            <state relative-caret-position="150">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,8 +95,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Poker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/PokerCompare.java" />
         <option value="$PROJECT_DIR$/src/test/java/PokerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PokerCompare.java" />
       </list>
     </option>
   </component>
@@ -218,12 +219,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PokerTest.should_return_list_win_when_give_a_pair_list_and_a_high_card" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PokerTest.should_return_list1_win_when_give_two_same_double_tow__pair_list_and_list1_simple_card_is_high_than_list" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;PokerTest.should_return_list_win_when_give_a_pair_list_and_a_high_card&quot;" />
+        <option name="scriptParameters" value="--tests &quot;PokerTest.should_return_list1_win_when_give_two_same_double_tow__pair_list_and_list1_simple_card_is_high_than_list&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -281,10 +282,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.PokerTest" />
+        <item itemvalue="Gradle.PokerTest.should_return_list1_win_when_give_two_same_double_tow__pair_list_and_list1_simple_card_is_high_than_list" />
         <item itemvalue="Gradle.PokerTest.should_return_palyer2_win_when_give_two_double_tow__pair_list_and_list1_is_high_than_list" />
         <item itemvalue="Gradle.PokerTest.should_return_A_draw_when_give_same_high_list" />
         <item itemvalue="Gradle.PokerTest.should_return_player2_win_when_both_have_a_pair_but_p2_pair_max_than_p1" />
-        <item itemvalue="Gradle.PokerTest.should_return_list_win_when_give_a_pair_list_and_a_high_card" />
       </list>
     </recent_temporary>
   </component>
@@ -300,23 +301,11 @@
       <updated>1566102963482</updated>
       <workItem from="1566102971357" duration="264000" />
       <workItem from="1566103474193" duration="317000" />
-      <workItem from="1566103948148" duration="7543000" />
+      <workItem from="1566103948148" duration="9415000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PokerTest_should_return_list_win_when_give_a_pair_list_and_a_high_card - 2019.08.18 at 14h 28m 20s.xml">
-      <configuration name="PokerTest.should_return_list_win_when_give_a_pair_list_and_a_high_card" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="PokerTest - 2019.08.18 at 14h 28m 42s.xml">
-      <configuration name="PokerTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="PokerTest_should_return_player2_win_when_both_have_a_pair_but_p2_pair_max_than_p1 - 2019.08.18 at 14h 53m 35s.xml">
-      <configuration name="PokerTest.should_return_player2_win_when_both_have_a_pair_but_p2_pair_max_than_p1" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="PokerTest_should_return_player2_win_when_both_have_a_pair_but_p2_pair_max_than_p1 - 2019.08.18 at 14h 55m 38s.xml">
-      <configuration name="PokerTest.should_return_player2_win_when_both_have_a_pair_but_p2_pair_max_than_p1" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="PokerTest - 2019.08.18 at 15h 03m 44s.xml">
       <configuration name="PokerTest" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -335,9 +324,21 @@
     <history-entry file="PokerTest - 2019.08.18 at 15h 14m 20s.xml">
       <configuration name="PokerTest" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="PokerTest_should_return_list1_win_when_give_two_same_double_tow__pair_list_and_list1_simple_card_is_high_than_list - 2019.08.18 at 15h 27m 04s.xml">
+      <configuration name="PokerTest.should_return_list1_win_when_give_two_same_double_tow__pair_list_and_list1_simple_card_is_high_than_list" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="PokerTest_should_return_list1_win_when_give_two_same_double_tow__pair_list_and_list1_simple_card_is_high_than_list - 2019.08.18 at 15h 28m 11s.xml">
+      <configuration name="PokerTest.should_return_list1_win_when_give_two_same_double_tow__pair_list_and_list1_simple_card_is_high_than_list" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="PokerTest - 2019.08.18 at 15h 36m 21s.xml">
+      <configuration name="PokerTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="PokerTest - 2019.08.18 at 15h 38m 48s.xml">
+      <configuration name="PokerTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8124000" />
+    <option name="totallyTimeSpent" value="9996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="-8" width="1307" height="784" extended-state="6" />
@@ -352,7 +353,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4370016" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3524721" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -388,8 +389,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Poker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="24" />
+        <state relative-caret-position="75">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding>
             <element signature="e#337#338#0" expanded="true" />
             <element signature="e#366#367#0" expanded="true" />
@@ -405,8 +406,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PokerCompare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+        <state relative-caret-position="150">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -415,8 +416,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PokerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+        <state relative-caret-position="210">
+          <caret line="81" column="101" lean-forward="true" selection-start-line="81" selection-start-column="101" selection-end-line="81" selection-end-column="101" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
