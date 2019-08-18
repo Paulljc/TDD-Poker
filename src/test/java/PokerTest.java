@@ -251,4 +251,16 @@ public class PokerTest {
         Assert.assertEquals("Player1 win", result);
     }
 
+
+    @Test
+    public void should_return_player2_win_when_give_two_straight_color_and_same_number() {
+        //given
+        List player1 = Arrays.asList(new Poker("4c"), new Poker("5c"), new Poker("6c"), new Poker("7c"), new Poker("8c"));
+        List player2 = Arrays.asList(new Poker("4s"), new Poker("5s"), new Poker("6s"), new Poker("7s"), new Poker("8s"));
+        PokerCompare pokerCompare = new PokerCompare();
+        //when
+        String result = pokerCompare.compareCard(player1, player2);
+        //then
+        Assert.assertEquals("Player2 win", result);
+    }
 }
