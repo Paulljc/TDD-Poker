@@ -16,11 +16,20 @@ public class PokerCompare {
         Map<Integer, Integer> player1PairAmount = calcPairAmount(player1Number);
         Map<Integer, Integer> player2PairAmount = calcPairAmount(player2Number);
 
+
+
         if (player1PairAmount.size() > player2PairAmount.size()) {
             return PLAYER1_WIN;
         }
         if (player1PairAmount.size() < player2PairAmount.size()) {
             return PLAYER2_WIN;
+        }
+        if (player1PairAmount.size() == player2PairAmount.size()) {
+            if (comparePairMaxNumber(player1PairAmount, player2PairAmount)) {
+                return PLAYER1_WIN;
+            }else{
+                return PLAYER2_WIN;
+            }
         }
 
         int player1MaxNumber = getMaxNumber(player1);
@@ -31,6 +40,16 @@ public class PokerCompare {
             return PLAYER2_WIN;
         } else {
             return A_DRAW;
+        }
+    }
+
+    private boolean comparePairMaxNumber(Map<Integer, Integer> player1PairAmount, Map<Integer, Integer> player2PairAmount) {
+        int p1PairMax = (new ArrayList<Integer>(player1PairAmount.keySet())).stream().mapToInt(num -> num).max().getAsInt();
+        int p2PairMax = (new ArrayList<Integer>(player2PairAmount.keySet())).stream().mapToInt(num -> num).max().getAsInt();
+        if (p1PairMax > p2PairMax) {
+            return true;
+        } else {
+            return false;
         }
     }
 
