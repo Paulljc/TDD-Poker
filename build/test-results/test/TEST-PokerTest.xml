@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PokerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-08-18T06:00:52" hostname="USER-20150312HD" time="0.026">
+  <properties/>
+  <testcase name="should_return_A_draw_when_give_same_high_list" classname="PokerTest" time="0.023"/>
+  <testcase name="should_return_player2_win_when_give_two_high_list" classname="PokerTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
