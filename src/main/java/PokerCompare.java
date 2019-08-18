@@ -20,15 +20,30 @@ public class PokerCompare {
         Set<Character> player1Color = calcColor(player1);
         Set<Character> player2Color = calcColor(player2);
 
-        if(player1Color.size() == 1 || player2Color.size() == 1){
+        boolean player1IsThreeWithTwo = calcThreeWithTwo(player1PairAmount);
+        boolean player2IsThreeWithTwo = calcThreeWithTwo(player2PairAmount);
+        if (player1IsThreeWithTwo || player2IsThreeWithTwo) {
+            if (player1IsThreeWithTwo && !player2IsThreeWithTwo) {
+                return PLAYER1_WIN;
+            } else if (!player1IsThreeWithTwo && player2IsThreeWithTwo) {
+                return PLAYER2_WIN;
+            } else {
+
+            }
+        }
+//        if (player2PairAmount.size() > 1 && ((new ArrayList<Integer>(player2PairAmount.values())).stream().filter(num -> num > 2)).count() > 0) {
+//            return PLAYER2_WIN;
+//        }
+
+        if (player1Color.size() == 1 || player2Color.size() == 1) {
             if (player1Color.size() == 1 && player2Color.size() != 1) {
                 return PLAYER1_WIN;
             } else if (player1Color.size() != 1 && player2Color.size() == 1) {
                 return PLAYER2_WIN;
-            } else if(player1Color.size() == player2Color.size()) {
-                if (compareColor(player1Color, player2Color) == "p1"){
+            } else if (player1Color.size() == player2Color.size()) {
+                if (compareColor(player1Color, player2Color) == "p1") {
                     return PLAYER1_WIN;
-                } else if (compareColor(player1Color, player2Color) == "p2"){
+                } else if (compareColor(player1Color, player2Color) == "p2") {
                     return PLAYER2_WIN;
                 } else {
 
@@ -89,12 +104,16 @@ public class PokerCompare {
         }
     }
 
+    private boolean calcThreeWithTwo(Map<Integer, Integer> playerPairAmount) {
+        return playerPairAmount.size() > 1 && ((new ArrayList<Integer>(playerPairAmount.values())).stream().filter(num -> num > 2)).count() > 0;
+    }
+
     private String compareColor(Set<Character> player1Color, Set<Character> player2Color) {
         int player1ColorLevel = COLORS.indexOf(player1Color.iterator().next());
         int player2ColorLevel = COLORS.indexOf(player2Color.iterator().next());
-        if (player1ColorLevel < player2ColorLevel){
+        if (player1ColorLevel < player2ColorLevel) {
             return "p1";
-        }else if (player1ColorLevel > player2ColorLevel){
+        } else if (player1ColorLevel > player2ColorLevel) {
             return "p2";
         } else {
             return "same";
