@@ -178,7 +178,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.PokerTest">
+  <component name="RunManager" selected="Gradle.PokerTest.should_return_player2_win_when_give_double_three_card_with_two_pair">
     <configuration name="PokerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -259,12 +259,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PokerTest.should_return_player2_win_when_give_two_different_straight_" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PokerTest.should_return_player2_win_when_give_double_three_card_with_two_pair" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;PokerTest.should_return_player2_win_when_give_two_different_straight_&quot;" />
+        <option name="scriptParameters" value="--tests &quot;PokerTest.should_return_player2_win_when_give_double_three_card_with_two_pair&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -281,11 +281,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PokerTest.should_return_player2_win_when_give_double_three_card_with_two_pair" />
         <item itemvalue="Gradle.PokerTest" />
         <item itemvalue="Gradle.PokerTest.should_return_player2_win_when_give_a_same_color_and_a_three_card_with_two_pair" />
         <item itemvalue="Gradle.PokerTest.should_return_player1_win_when_give_two_same_color_but_different_number" />
         <item itemvalue="Gradle.PokerTest.should_return_player2_win_when_give_a_same_color_and_a_Straight" />
-        <item itemvalue="Gradle.PokerTest.should_return_player2_win_when_give_two_different_straight_" />
       </list>
     </recent_temporary>
   </component>
