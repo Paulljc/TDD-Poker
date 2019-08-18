@@ -131,7 +131,7 @@ public class PokerTest {
     }
 
     @Test
-    public void should_return_player1_win_when_give_a_straight_and_three_same_card(){
+    public void should_return_player1_win_when_give_a_straight_and_three_same_card() {
         //given
         List player1 = Arrays.asList(new Poker("2s"), new Poker("3d"), new Poker("4c"), new Poker("5d"), new Poker("6d"));
         List player2 = Arrays.asList(new Poker("3s"), new Poker("3d"), new Poker("3c"), new Poker("6d"), new Poker("7s"));
@@ -139,12 +139,12 @@ public class PokerTest {
         //when
         String result = pokerCompare.compareCard(player1, player2);
         //then
-        Assert.assertEquals("Player1 win",result);
+        Assert.assertEquals("Player1 win", result);
     }
 
 
     @Test
-    public void should_return_player2_win_when_give_two_different_straight_(){
+    public void should_return_player2_win_when_give_two_different_straight_() {
         //given
         List player1 = Arrays.asList(new Poker("3d"), new Poker("4c"), new Poker("5d"), new Poker("6d"), new Poker("7s"));
         List player2 = Arrays.asList(new Poker("4c"), new Poker("5d"), new Poker("6d"), new Poker("7s"), new Poker("8s"));
@@ -152,6 +152,18 @@ public class PokerTest {
         //when
         String result = pokerCompare.compareCard(player1, player2);
         //then
-        Assert.assertEquals("Player2 win",result);
+        Assert.assertEquals("Player2 win", result);
+    }
+
+    @Test
+    public void should_return_player2_win_when_give_a_same_color_and_a_Straight() {
+        //given
+        List player1 = Arrays.asList(new Poker("5s"), new Poker("6d"), new Poker("7c"), new Poker("8d"), new Poker("9d"));
+        List player2 = Arrays.asList(new Poker("3d"), new Poker("4d"), new Poker("5d"), new Poker("6d"), new Poker("8d"));
+        PokerCompare pokerCompare = new PokerCompare();
+        //when
+        String result = pokerCompare.compareCard(player1, player2);
+        //then
+        Assert.assertEquals("Player2 win", result);
     }
 }

@@ -16,6 +16,19 @@ public class PokerCompare {
         Map<Integer, Integer> player1PairAmount = calcPairAmount(player1Number);
         Map<Integer, Integer> player2PairAmount = calcPairAmount(player2Number);
 
+        Set<Character> player1Color = calcColor(player1);
+        Set<Character> player2Color = calcColor(player2);
+
+        if(player1Color.size() == 1 || player2Color.size() == 1){
+            if (player1Color.size() == 1 && player2Color.size() != 1) {
+                return PLAYER1_WIN;
+            } else if (player1Color.size() != 1 && player2Color.size() == 1) {
+                return PLAYER2_WIN;
+            } else {
+
+            }
+        }
+
         boolean player1IsStraight = calcStraight(player1Number, player1PairAmount);
         boolean player2IsStraight = calcStraight(player2Number, player2PairAmount);
         if (player1IsStraight || player2IsStraight) {
@@ -65,6 +78,10 @@ public class PokerCompare {
         } else {
             return A_DRAW;
         }
+    }
+
+    private Set<Character> calcColor(List<Poker> player) {
+        return player.stream().map(Poker::getColor).collect(Collectors.toSet());
     }
 
     private boolean calcStraight(List<Integer> playerNumber, Map<Integer, Integer> playerPairAmount) {
