@@ -178,7 +178,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.PokerTest">
+  <component name="RunManager" selected="Gradle.PokerTest.should_return_player2_win_when_give_two_different_straight_">
     <configuration name="PokerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -281,8 +281,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PokerTest" />
         <item itemvalue="Gradle.PokerTest.should_return_player2_win_when_give_two_different_straight_" />
+        <item itemvalue="Gradle.PokerTest" />
         <item itemvalue="Gradle.PokerTest.should_return_player1_win_when_give_a_straight_and_three_same_card" />
         <item itemvalue="Gradle.PokerTest.should_return_player1_win_when_give_two_same_three_card" />
         <item itemvalue="Gradle.PokerTest.should_return_player1_win_when_give_a_three_same_card_and_two_pair" />

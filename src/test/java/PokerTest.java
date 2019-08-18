@@ -142,4 +142,16 @@ public class PokerTest {
         Assert.assertEquals("Player1 win",result);
     }
 
+
+    @Test
+    public void should_return_player2_win_when_give_two_different_straight_(){
+        //given
+        List player1 = Arrays.asList(new Poker("3d"), new Poker("4c"), new Poker("5d"), new Poker("6d"), new Poker("7s"));
+        List player2 = Arrays.asList(new Poker("4c"), new Poker("5d"), new Poker("6d"), new Poker("7s"), new Poker("8s"));
+        PokerCompare pokerCompare = new PokerCompare();
+        //when
+        String result = pokerCompare.compareCard(player1, player2);
+        //then
+        Assert.assertEquals("Player2 win",result);
+    }
 }
