@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PokerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-18T10:09:57" hostname="USER-20150312HD" time="0.082">
+<testsuite name="PokerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-18T10:18:17" hostname="USER-20150312HD" time="0.036">
   <properties/>
-  <testcase name="should_return_player2_win_when_give_double_three_card_with_two_pair" classname="PokerTest" time="0.082"/>
+  <testcase name="should_return_player1_win_when_give_two_different_four_pair" classname="PokerTest" time="0.036"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

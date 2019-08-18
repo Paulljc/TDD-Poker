@@ -168,7 +168,7 @@ public class PokerTest {
     }
 
     @Test
-    public void should_return_player1_win_when_give_two_different_color(){
+    public void should_return_player1_win_when_give_two_different_color() {
         //given
         List player1 = Arrays.asList(new Poker("5s"), new Poker("6s"), new Poker("7s"), new Poker("4s"), new Poker("9s"));
         List player2 = Arrays.asList(new Poker("3d"), new Poker("4d"), new Poker("5d"), new Poker("6d"), new Poker("8d"));
@@ -176,11 +176,11 @@ public class PokerTest {
         //when
         String result = pokerCompare.compareCard(player1, player2);
         //then
-        Assert.assertEquals("Player1 win",result);
+        Assert.assertEquals("Player1 win", result);
     }
 
     @Test
-    public void should_return_player1_win_when_give_two_same_color_but_different_number(){
+    public void should_return_player1_win_when_give_two_same_color_but_different_number() {
         //given
         List player1 = Arrays.asList(new Poker("5s"), new Poker("6s"), new Poker("7s"), new Poker("4s"), new Poker("9s"));
         List player2 = Arrays.asList(new Poker("3s"), new Poker("4s"), new Poker("5s"), new Poker("6s"), new Poker("8s"));
@@ -188,11 +188,11 @@ public class PokerTest {
         //when
         String result = pokerCompare.compareCard(player1, player2);
         //then
-        Assert.assertEquals("Player1 win",result);
+        Assert.assertEquals("Player1 win", result);
     }
 
     @Test
-    public void should_return_player2_win_when_give_a_same_color_and_a_three_card_with_two_pair(){
+    public void should_return_player2_win_when_give_a_same_color_and_a_three_pair_with_two_pair() {
         //given
         List player1 = Arrays.asList(new Poker("4s"), new Poker("6s"), new Poker("7s"), new Poker("8s"), new Poker("9s"));
         List player2 = Arrays.asList(new Poker("3d"), new Poker("2d"), new Poker("2s"), new Poker("2h"), new Poker("3h"));
@@ -200,11 +200,11 @@ public class PokerTest {
         //when
         String result = pokerCompare.compareCard(player1, player2);
         //then
-        Assert.assertEquals("Player2 win",result);
+        Assert.assertEquals("Player2 win", result);
     }
 
     @Test
-    public void should_return_player2_win_when_give_double_three_card_with_two_pair(){
+    public void should_return_player1_win_when_give_double_three_pair_with_two_pair() {
         //given
         List player1 = Arrays.asList(new Poker("4s"), new Poker("4h"), new Poker("7s"), new Poker("4d"), new Poker("7s"));
         List player2 = Arrays.asList(new Poker("3d"), new Poker("2d"), new Poker("2s"), new Poker("2h"), new Poker("3h"));
@@ -212,6 +212,19 @@ public class PokerTest {
         //when
         String result = pokerCompare.compareCard(player1, player2);
         //then
-        Assert.assertEquals("Player1 win",result);
+        Assert.assertEquals("Player1 win", result);
     }
+
+    @Test
+    public void should_return_player2_win_when_give_a_four_pair_and_a_three_pair_and_two_pair() {
+        //given
+        List player1 = Arrays.asList(new Poker("5d"), new Poker("7d"), new Poker("7s"), new Poker("7h"), new Poker("5h"));
+        List player2 = Arrays.asList(new Poker("3c"), new Poker("3d"), new Poker("3s"), new Poker("3h"), new Poker("4h"));
+        PokerCompare pokerCompare = new PokerCompare();
+        //when
+        String result = pokerCompare.compareCard(player1, player2);
+        //then
+        Assert.assertEquals("Player2 win", result);
+    }
+
 }

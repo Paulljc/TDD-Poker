@@ -20,6 +20,18 @@ public class PokerCompare {
         Set<Character> player1Color = calcColor(player1);
         Set<Character> player2Color = calcColor(player2);
 
+        boolean player1IsFourWithOne = calcFourWithOne(player1PairAmount);
+        boolean player2IsFourWithOne = calcFourWithOne(player2PairAmount);
+        if (player1IsFourWithOne || player2IsFourWithOne) {
+            if (player1IsFourWithOne && !player2IsFourWithOne) {
+                return PLAYER1_WIN;
+            } else if (!player1IsFourWithOne && player2IsFourWithOne) {
+                return PLAYER2_WIN;
+            } else {
+
+            }
+        }
+
         boolean player1IsThreeWithTwo = calcThreeWithTwo(player1PairAmount);
         boolean player2IsThreeWithTwo = calcThreeWithTwo(player2PairAmount);
         if (player1IsThreeWithTwo || player2IsThreeWithTwo) {
@@ -31,9 +43,6 @@ public class PokerCompare {
 
             }
         }
-//        if (player2PairAmount.size() > 1 && ((new ArrayList<Integer>(player2PairAmount.values())).stream().filter(num -> num > 2)).count() > 0) {
-//            return PLAYER2_WIN;
-//        }
 
         if (player1Color.size() == 1 || player2Color.size() == 1) {
             if (player1Color.size() == 1 && player2Color.size() != 1) {
@@ -102,6 +111,10 @@ public class PokerCompare {
         } else {
             return A_DRAW;
         }
+    }
+
+    private boolean calcFourWithOne(Map<Integer, Integer> playerPairAmount) {
+        return playerPairAmount.size() == 1 && ((new ArrayList<Integer>(playerPairAmount.values())).stream().filter(num -> num > 3)).count() > 0;
     }
 
     private boolean calcThreeWithTwo(Map<Integer, Integer> playerPairAmount) {
