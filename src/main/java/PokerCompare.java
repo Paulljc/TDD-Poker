@@ -16,6 +16,18 @@ public class PokerCompare {
         Map<Integer, Integer> player1PairAmount = calcPairAmount(player1Number);
         Map<Integer, Integer> player2PairAmount = calcPairAmount(player2Number);
 
+        boolean player1IsStraight = calcStraight(player1Number, player1PairAmount);
+        boolean player2IsStraight = calcStraight(player2Number, player2PairAmount);
+        if (player1IsStraight || player2IsStraight) {
+            if (player1IsStraight && !player2IsStraight) {
+                return PLAYER1_WIN;
+            } else if (!player1IsStraight && player2IsStraight) {
+                return PLAYER2_WIN;
+            } else {
+
+            }
+        }
+
         if (player1PairAmount.size() > 0 && player2PairAmount.size() > 0) {
             String threeSameCard = calcThreeSameCard(player1PairAmount, player2PairAmount);
             if (threeSameCard == "p1") {
@@ -54,6 +66,15 @@ public class PokerCompare {
             return A_DRAW;
         }
     }
+
+    private boolean calcStraight(List<Integer> playerNumber, Map<Integer, Integer> playerPairAmount) {
+        if (Collections.max(playerNumber) - Collections.min(playerNumber) == 4 && playerPairAmount.size() == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 
     private String calcThreeSameCard(Map<Integer, Integer> player1PairAmount, Map<Integer, Integer> player2PairAmount) {
         int p1ThreeMax = (new ArrayList<Integer>(player1PairAmount.keySet())).stream().mapToInt(num -> num).max().getAsInt();
