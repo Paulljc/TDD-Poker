@@ -53,4 +53,16 @@ public class PokerTest {
         //then
         Assert.assertEquals("Player2 win", result);
     }
+
+    @Test
+    public void should_return_player1_win_when_compare_two_pair_with_a_pair() {
+        //given
+        List player1 = Arrays.asList(new Poker("3s"), new Poker("3d"), new Poker("4s"), new Poker("4d"), new Poker("7s"));
+        List player2 = Arrays.asList(new Poker("4s"), new Poker("4d"), new Poker("6s"), new Poker("5d"), new Poker("3s"));
+        PokerCompare pokerCompare = new PokerCompare();
+        //when
+        String result = pokerCompare.compareCard(player1, player2);
+        //then
+        Assert.assertEquals("Player1 win", result);
+    }
 }

@@ -24,7 +24,7 @@ public class PokerCompare {
         if (player1PairAmount.size() < player2PairAmount.size()) {
             return PLAYER2_WIN;
         }
-        if (player1PairAmount.size() == player2PairAmount.size()) {
+        if (player1PairAmount.size() > 0 && player2PairAmount.size() > 0 && player1PairAmount.size() == player2PairAmount.size()) {
             if (comparePairMaxNumber(player1PairAmount, player2PairAmount)) {
                 return PLAYER1_WIN;
             }else{
