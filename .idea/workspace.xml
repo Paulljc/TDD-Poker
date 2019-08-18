@@ -55,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PokerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="166" column="51" selection-start-line="166" selection-start-column="51" selection-end-line="166" selection-end-column="51" />
+            <state relative-caret-position="374">
+              <caret line="179" column="5" lean-forward="true" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/PokerCompare.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="1916">
+              <caret line="99" column="26" lean-forward="true" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,7 +178,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.PokerTest.should_return_player2_win_when_give_a_same_color_and_a_Straight">
+  <component name="RunManager" selected="Gradle.PokerTest.should_return_player1_win_when_give_two_same_color_but_different_number">
     <configuration name="PokerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -219,12 +219,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PokerTest.should_return_player1_win_when_give_two_same_three_card" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PokerTest.should_return_player1_win_when_give_two_same_color_but_different_number" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;PokerTest.should_return_player1_win_when_give_two_same_three_card&quot;" />
+        <option name="scriptParameters" value="--tests &quot;PokerTest.should_return_player1_win_when_give_two_same_color_but_different_number&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -281,11 +281,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PokerTest.should_return_player1_win_when_give_two_same_color_but_different_number" />
         <item itemvalue="Gradle.PokerTest.should_return_player2_win_when_give_a_same_color_and_a_Straight" />
         <item itemvalue="Gradle.PokerTest.should_return_player2_win_when_give_two_different_straight_" />
         <item itemvalue="Gradle.PokerTest" />
         <item itemvalue="Gradle.PokerTest.should_return_player1_win_when_give_a_straight_and_three_same_card" />
-        <item itemvalue="Gradle.PokerTest.should_return_player1_win_when_give_two_same_three_card" />
       </list>
     </recent_temporary>
   </component>
@@ -301,44 +301,44 @@
       <updated>1566102963482</updated>
       <workItem from="1566102971357" duration="264000" />
       <workItem from="1566103474193" duration="317000" />
-      <workItem from="1566103948148" duration="13870000" />
+      <workItem from="1566103948148" duration="16502000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PokerTest_should_return_player1_win_when_give_a_three_same_card_and_two_pair - 2019.08.18 at 16h 03m 09s.xml">
-      <configuration name="PokerTest.should_return_player1_win_when_give_a_three_same_card_and_two_pair" configurationId="GradleRunConfiguration" />
+    <history-entry file="PokerTest_should_return_player2_win_when_give_a_same_color_and_a_Straight - 2019.08.18 at 17h 02m 44s.xml">
+      <configuration name="PokerTest.should_return_player2_win_when_give_a_same_color_and_a_Straight" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="PokerTest_should_return_player1_win_when_give_a_three_same_card_and_two_pair - 2019.08.18 at 16h 03m 38s.xml">
-      <configuration name="PokerTest.should_return_player1_win_when_give_a_three_same_card_and_two_pair" configurationId="GradleRunConfiguration" />
+    <history-entry file="PokerTest_should_return_player1_win_when_give_two_same_color_but_different_number - 2019.08.18 at 17h 12m 17s.xml">
+      <configuration name="PokerTest.should_return_player1_win_when_give_two_same_color_but_different_number" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="PokerTest - 2019.08.18 at 16h 08m 31s.xml">
-      <configuration name="PokerTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="PokerTest_should_return_player2_win_when_give_a_same_color_and_a_Straight - 2019.08.18 at 17h 32m 50s.xml">
+      <configuration name="PokerTest.should_return_player2_win_when_give_a_same_color_and_a_Straight" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="PokerTest_should_return_player1_win_when_give_two_same_three_card - 2019.08.18 at 16h 09m 50s.xml">
-      <configuration name="PokerTest.should_return_player1_win_when_give_two_same_three_card" configurationId="GradleRunConfiguration" />
+    <history-entry file="PokerTest_should_return_player1_win_when_give_two_same_color_but_different_number - 2019.08.18 at 17h 33m 01s.xml">
+      <configuration name="PokerTest.should_return_player1_win_when_give_two_same_color_but_different_number" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="PokerTest_should_return_player1_win_when_give_a_straight_and_three_same_card - 2019.08.18 at 16h 22m 16s.xml">
-      <configuration name="PokerTest.should_return_player1_win_when_give_a_straight_and_three_same_card" configurationId="GradleRunConfiguration" />
+    <history-entry file="PokerTest_should_return_player1_win_when_give_two_same_color_but_different_number - 2019.08.18 at 17h 34m 39s.xml">
+      <configuration name="PokerTest.should_return_player1_win_when_give_two_same_color_but_different_number" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="PokerTest_should_return_player1_win_when_give_a_straight_and_three_same_card - 2019.08.18 at 16h 22m 40s.xml">
-      <configuration name="PokerTest.should_return_player1_win_when_give_a_straight_and_three_same_card" configurationId="GradleRunConfiguration" />
+    <history-entry file="PokerTest_should_return_player1_win_when_give_two_same_color_but_different_number - 2019.08.18 at 17h 42m 05s.xml">
+      <configuration name="PokerTest.should_return_player1_win_when_give_two_same_color_but_different_number" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="PokerTest_should_return_player2_win_when_give_two_different_straight_ - 2019.08.18 at 16h 34m 29s.xml">
-      <configuration name="PokerTest.should_return_player2_win_when_give_two_different_straight_" configurationId="GradleRunConfiguration" />
+    <history-entry file="PokerTest_should_return_player1_win_when_give_two_same_color_but_different_number - 2019.08.18 at 17h 44m 25s.xml">
+      <configuration name="PokerTest.should_return_player1_win_when_give_two_same_color_but_different_number" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="PokerTest - 2019.08.18 at 16h 41m 41s.xml">
-      <configuration name="PokerTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="PokerTest_should_return_player1_win_when_give_two_same_color_but_different_number - 2019.08.18 at 17h 45m 16s.xml">
+      <configuration name="PokerTest.should_return_player1_win_when_give_two_same_color_but_different_number" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="PokerTest - 2019.08.18 at 16h 42m 01s.xml">
-      <configuration name="PokerTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="PokerTest_should_return_player1_win_when_give_two_same_color_but_different_number - 2019.08.18 at 17h 46m 23s.xml">
+      <configuration name="PokerTest.should_return_player1_win_when_give_two_same_color_but_different_number" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="PokerTest_should_return_player2_win_when_give_two_different_straight_ - 2019.08.18 at 16h 43m 11s.xml">
-      <configuration name="PokerTest.should_return_player2_win_when_give_two_different_straight_" configurationId="GradleRunConfiguration" />
+    <history-entry file="PokerTest_should_return_player1_win_when_give_two_same_color_but_different_number - 2019.08.18 at 17h 47m 06s.xml">
+      <configuration name="PokerTest.should_return_player1_win_when_give_two_same_color_but_different_number" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14451000" />
+    <option name="totallyTimeSpent" value="17083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="-8" width="1307" height="784" extended-state="6" />
@@ -353,7 +353,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33811802" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36204147" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -387,16 +387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PokerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="166" column="51" selection-start-line="166" selection-start-column="51" selection-end-line="166" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Poker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -416,8 +406,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PokerCompare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="1916">
+          <caret line="99" column="26" lean-forward="true" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PokerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="179" column="5" lean-forward="true" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

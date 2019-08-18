@@ -8,6 +8,7 @@ public class PokerCompare {
     public static final String PLAYER1_WIN = "Player1 win";
     public static final String PLAYER2_WIN = "Player2 win";
     public static final String A_DRAW = "A draw";
+    public static final String COLORS = "shcd";
 
     public String compareCard(List<Poker> player1, List<Poker> player2) {
         List<Integer> player1Number = sortNumber(player1);
@@ -24,6 +25,14 @@ public class PokerCompare {
                 return PLAYER1_WIN;
             } else if (player1Color.size() != 1 && player2Color.size() == 1) {
                 return PLAYER2_WIN;
+            } else if(player1Color.size() == player2Color.size()) {
+                if (compareColor(player1Color, player2Color) == "p1"){
+                    return PLAYER1_WIN;
+                } else if (compareColor(player1Color, player2Color) == "p2"){
+                    return PLAYER2_WIN;
+                } else {
+
+                }
             } else {
 
             }
@@ -77,6 +86,18 @@ public class PokerCompare {
             return PLAYER2_WIN;
         } else {
             return A_DRAW;
+        }
+    }
+
+    private String compareColor(Set<Character> player1Color, Set<Character> player2Color) {
+        int player1ColorLevel = COLORS.indexOf(player1Color.iterator().next());
+        int player2ColorLevel = COLORS.indexOf(player2Color.iterator().next());
+        if (player1ColorLevel < player2ColorLevel){
+            return "p1";
+        }else if (player1ColorLevel > player2ColorLevel){
+            return "p2";
+        } else {
+            return "same";
         }
     }
 

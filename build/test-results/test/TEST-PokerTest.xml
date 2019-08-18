@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PokerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-18T09:02:43" hostname="USER-20150312HD" time="0.029">
+<testsuite name="PokerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-18T09:47:06" hostname="USER-20150312HD" time="0.028">
   <properties/>
-  <testcase name="should_return_player2_win_when_give_a_same_color_and_a_Straight" classname="PokerTest" time="0.029"/>
+  <testcase name="should_return_player1_win_when_give_two_same_color_but_different_number" classname="PokerTest" time="0.028"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
