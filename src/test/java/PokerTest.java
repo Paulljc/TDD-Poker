@@ -101,4 +101,19 @@ public class PokerTest {
         //then
         Assert.assertEquals("A draw", result);
     }
+
+    @Test
+    public void should_return_player1_win_when_give_a_three_same_card_and_two_pair() {
+        //given
+        List player1 = Arrays.asList(new Poker("4s"),
+                new Poker("4d"), new Poker("4c"), new Poker("6d"), new Poker("7d"));
+        List player2 = Arrays.asList(new Poker("3s"),
+                new Poker("3d"), new Poker("6s"), new Poker("6d"), new Poker("7s"));
+        PokerCompare pokerCompare = new PokerCompare();
+        //when
+        String result = pokerCompare.compareCard(player1, player2);
+        //then
+        Assert.assertEquals("Player1 win", result);
+    }
+    
 }
